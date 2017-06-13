@@ -1,55 +1,55 @@
 {
-    "name": "await-url",
-    "version": "0.0.0",
-    "description": "Wait for a given URL to continue.",
-    "homepage": "https://github.com/sholladay/await-url",
-    "main": "index.js",
-    "author": {
-        "name": "Seth Holladay",
-        "url": "http://seth-holladay.com",
-        "email": "me@seth-holladay.com"
-    },
-    "scripts": {
-        "test": "xo && ava"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:sholladay/await-url.git"
-    },
-    "bugs": {
-        "url": "https://github.com/sholladay/await-url/issues",
-        "email": "me@seth-holladay.com"
-    },
-    "engines": {
-        "node": ">=6"
-    },
-    "license": "MPL-2.0",
-    "bin": "cli.js",
-    "files": [
-        "index.js",
-        "cli.js"
-    ],
-    "dependencies": {
-        "got": "^7.0.0",
-        "meow": "^3.7.0"
-    },
-    "devDependencies": {
-        "ava": "^0.19.1",
-        "eslint-config-tidy": "^0.4.0",
-        "xo": "^0.18.0"
-    },
-    "keywords": [
-        "cli-app",
-        "cli",
-        "wait",
-        "await",
-        "url",
-        "conditional",
-        "ready",
-        "timeout",
-        "retry"
-    ],
-    "xo": {
-        "extend": "tidy"
-    }
+  "name": "await-url",
+  "version": "0.1.0",
+  "description": "Wait for a given URL to continue.",
+  "homepage": "https://github.com/sholladay/await-url",
+  "main": "index.js",
+  "author": {
+    "name": "Seth Holladay",
+    "url": "http://seth-holladay.com",
+    "email": "me@seth-holladay.com"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sholladay/await-url.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sholladay/await-url/issues",
+    "email": "me@seth-holladay.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "license": "MPL-2.0",
+  "bin": "cli.js",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "dependencies": {
+    "got": "^7.0.0",
+    "meow": "^3.7.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "eslint-config-tidy": "^0.4.0",
+    "xo": "^0.18.0"
+  },
+  "keywords": [
+    "cli-app",
+    "cli",
+    "wait",
+    "await",
+    "url",
+    "conditional",
+    "ready",
+    "timeout",
+    "retry"
+  ],
+  "xo": {
+    "extend": "tidy"
+  }
 }
