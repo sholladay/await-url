@@ -1,0 +1,7 @@
+# Minor updates for dependencies, including security patches, should be
+# installed immediately, instead of being locked down.
+package-lock.json
+
+# Dependencies are installed manually or using a build process, so they
+# can benefit from machine-specific compiling, etc.
+node_modules
