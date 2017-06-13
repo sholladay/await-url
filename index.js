@@ -12,7 +12,11 @@ const awaitUrl = (url, option) => {
         const attempt = async (tries) => {
             const res = await got(url, {
                 followRedirect : false,
-                timeout        : 5000
+                timeout        : {
+                    connect : 10000,
+                    socket  : 10000,
+                    request : 10000
+                }
             });
             if (res.statusCode === 200) {
                 resolve();
