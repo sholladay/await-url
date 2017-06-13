@@ -1,4 +1,4 @@
-# await-url [![Build status for await-url on Circle CI.](https://img.shields.io/circleci/project/sholladay/await-url/master.svg "Circle Build Status")](https://circleci.com/gh/sholladay/await-url "Await Url Builds")
+# await-url [![Build status for await-url on Circle CI.](https://img.shields.io/circleci/project/sholladay/await-url/master.svg "Circle Build Status")](https://circleci.com/gh/sholladay/await-url "Await URL Builds")
 
 > Wait for a given URL to continue.
 
@@ -22,9 +22,34 @@ $ await-url --help
   Usage
     $ await-url <url>
 
+  Option
+    --tries     Maximum number of polling attempts
+    --interval  Milliseconds to wait between tries
+
   Example
     $ await-url example.com/status
+    $ await-url example.com --tries=3 --interval=1000
 ```
+
+Waiting until a URL returns 200 OK is especially useful to avoid sending traffic to it before it is ready.
+
+Please consider whether a more efficient, event-based model is available to you before using this.
+
+## Option
+
+### tries
+
+Type: `number`<br>
+Default: `1200`
+
+Maximum number of polling attempts to make before timing out.
+
+### interval
+
+Type: `number`<br>
+Default: `1200`
+
+Number of milliseconds to wait between polling attempts.
 
 ## Contributing
 

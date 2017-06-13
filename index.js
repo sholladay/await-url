@@ -3,10 +3,13 @@
 const got = require('got');
 
 const awaitUrl = (url, option) => {
-    const config = Object.assign({
-        interval : 1000,
-        tries    : 60
-    }, option);
+    const config = Object.assign(
+        {
+            tries    : 150,
+            interval : 1200
+        },
+        option
+    );
 
     return new Promise((resolve, reject) => {
         const attempt = async (tries) => {
@@ -21,7 +24,7 @@ const awaitUrl = (url, option) => {
             if (res.statusCode === 200) {
                 resolve();
             }
-            else if (Math.max(1, tries) > 1) {
+            else if (tries > 1) {
                 setTimeout(attempt, config.interval, tries - 1);
             }
             else {
