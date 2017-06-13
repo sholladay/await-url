@@ -1,6 +1,6 @@
 {
   "name": "await-url",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wait for a given URL to continue.",
   "homepage": "https://github.com/sholladay/await-url",
   "main": "index.js",
