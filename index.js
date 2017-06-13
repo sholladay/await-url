@@ -3,10 +3,10 @@
 const got = require('got');
 
 const awaitUrl = (url, option) => {
-    const config = Object.assign({}, option, {
+    const config = Object.assign({
         interval : 1000,
         tries    : 60
-    });
+    }, option);
 
     return new Promise((resolve, reject) => {
         const attempt = async (tries) => {
