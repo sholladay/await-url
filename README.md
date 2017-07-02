@@ -40,7 +40,7 @@ Please consider whether a more efficient, event-based model is available to you 
 ### tries
 
 Type: `number`<br>
-Default: `1200`
+Default: `150`
 
 Maximum number of polling attempts to make before timing out.
 
