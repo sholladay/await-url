@@ -31,7 +31,7 @@ $ await-url --help
     $ await-url example.com --tries=3 --interval=1000
 ```
 
-Waiting until a URL returns 200 OK is especially useful to avoid sending traffic to it before it is ready.
+Polling a URL until it returns 200 OK is especially useful to avoid sending traffic to it before it is ready. See a real example of [deploying a server in CI](https://gist.github.com/sholladay/bd0d9ffeebee6dd8207766be18886503).
 
 Please consider whether a more efficient, event-based model is available to you before using this.
 
