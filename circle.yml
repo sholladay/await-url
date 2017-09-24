@@ -1,3 +1,6 @@
 machine:
   node:
     version: 7
+test:
+  post:
+    - bash <(curl -s https://copilot.blackducksoftware.com/ci/circle/scripts/upload)
